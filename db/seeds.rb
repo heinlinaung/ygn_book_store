@@ -14,5 +14,5 @@ Book.create(:title => 'Programming Ruby 1.9',
         out there. If you need to get working programs delivered fast,
         you should add Ruby to your toolbox.
       </p>},
-  :image_url => '/images/ruby.jpg',
+  :image_url => 'ruby.jpg',
   :price => 49.50)
