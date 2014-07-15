@@ -7,12 +7,21 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Book.delete_all
 #...
-Book.create(:title => 'Programming Ruby 1.9',
+Book.create([{:title => 'Book1',
   :description =>
     %{<p>
-        Ruby is the fastest growing and most exciting dynamic language
+        Book1 is the fastest growing and most exciting dynamic language
         out there. If you need to get working programs delivered fast,
         you should add Ruby to your toolbox.
       </p>},
-  :image_url => 'ruby.jpg',
-  :price => 49.50)
+  :image_url => 'book1.jpg',
+  :price => 49.50},
+  {:title => 'Book2',
+  :description =>
+    %{<p>
+        Book2 is the fastest growing and most exciting dynamic language
+        out there. If you need to get working programs delivered fast,
+        you should add Ruby to your toolbox.
+      </p>},
+  :image_url => 'book2.jpg',
+  :price => 49.50}])
