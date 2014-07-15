@@ -4,7 +4,8 @@
 <h1>Your Pragmatic Catalog</h1>
 <% @books.each do |book| %>
 	<div class="entry">
-		<%= image_tag(book.image_url) %>
+		<%# image_tag(book.image_url) %>
+    <img src="holder.js/200x250">
 		<h3><%= book.title %></h3>
 		<%= sanitize(book.description) %> 
 		<div class="price_line">

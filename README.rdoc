@@ -1,5 +1,0 @@
-== README
-
-Online Book Selling Store is built mainly using 
-- Rails 4 
-- Bootstrap
