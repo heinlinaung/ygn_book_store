@@ -3,12 +3,6 @@ require 'test_helper'
 class BooksControllerTest < ActionController::TestCase
   setup do
     @book = books(:one)
-    @update = {
-          :title       => 'Lorem Ipsum',
-          :description => 'Wibbles are fun!',
-    ￼￼￼￼￼ :image_url  => 'lorem.jpg',
-          :price  => 19.95
-    ￼￼}
   end
 
   test "should get index" do
@@ -25,7 +19,7 @@ class BooksControllerTest < ActionController::TestCase
   test "should create book" do
     assert_difference('Book.count') do
       # post :create, book: { description: @book.description, image_url: @book.image_url, price: @book.price, title: @book.title }
-      post :create, :product => @update
+      post :create, :book => @book
     end
 
     assert_redirected_to book_path(assigns(:book))
@@ -43,7 +37,7 @@ class BooksControllerTest < ActionController::TestCase
 
   test "should update book" do
     # patch :update, id: @book, book: { description: @book.description, image_url: @book.image_url, price: @book.price, title: @book.title }
-    put :update, :id => @product.to_param, :product => @update
+    put :update, :id => @book.to_param, :book => @book
     assert_redirected_to book_path(assigns(:book))
   end
 

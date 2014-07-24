@@ -11,3 +11,9 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+test_book:
+  title: Book4
+  description: Book4 is for Web Developer
+  price:       9.43
+  image_url:   book4.png

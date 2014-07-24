@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class BookTest < ActiveSupport::TestCase
+  fixtures :books
   # test "the truth" do
   #   assert true
   # end
