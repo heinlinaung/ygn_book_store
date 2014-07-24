@@ -1,4 +1,6 @@
 YgnBookstore::Application.routes.draw do
+  resources :carts
+
   get "store/index"
   resources :books
 
