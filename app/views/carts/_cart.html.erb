@@ -1,0 +1,6 @@
+<h3>Your Cart</h3> 
+<ul type="none" style="margin:0 auto;">
+	<%= render(cart.line_items) %>
+	<li style="border-top:1px solid #333">Total - <%= number_to_currency(cart.grand_total) %></li>
+</ul>
+<%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?',:class=>"btn btn-primary" %>
