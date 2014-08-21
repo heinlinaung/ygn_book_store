@@ -67,8 +67,10 @@
           <div class="well sidebar-nav">
             <ul class="nav nav-list">
               <!-- <li class="nav-header">Sidebar</li> -->
-              <div id='cart'>
-                <%= render @cart %>
+              <div id="wrap">
+                <%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+                  <%= render @cart %>
+                <% end %>
               </div>
               <li><%= link_to "Book", "/books"  %></li>
               <li><%= link_to "Cart", "/carts"  %></li>
