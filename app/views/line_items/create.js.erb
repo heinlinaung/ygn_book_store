@@ -1,1 +1,5 @@
 $('#cart').html("<%= escape_javascript(render(@cart)) %>");
+function yip(){
+	noty({ type: 'information', text: 'Your Cart has been updated!!',
+	    layout: 'topCenter', closeWith: ['hover'], dimissQueue: true, timeout: 3600});
+}
