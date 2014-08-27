@@ -3,4 +3,5 @@
 	<%= render(cart.line_items) %>
 	<li style="border-top:1px solid #333">Total - <%= number_to_currency(cart.grand_total) %></li>
 </ul>
+<%= button_to "Checkout", new_order_url, :method=>:get ,:class=>"btn btn-primary"%>
 <%= button_to 'Empty cart', cart, :method => :delete, :confirm => 'Are you sure?',:class=>"btn btn-primary" %>
